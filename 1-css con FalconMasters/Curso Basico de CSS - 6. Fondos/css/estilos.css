@@ -1,0 +1,18 @@
+body{	
+	background: url(../imagenes/imagen.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed; /*Puede ir scroll para que el fondo también se mueva*/
+	color: #fff;
+	background-position: center  100px;
+}
+
+/*div{
+	/*background: #ff800;
+	background: url(../imagenes/imagen.jpg);
+	width: 300px;
+	color: #fff;
+}*/
+
+p, h1{
+	color: black;
+}

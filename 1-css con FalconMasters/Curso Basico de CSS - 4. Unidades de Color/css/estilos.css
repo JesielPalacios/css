@@ -1,0 +1,15 @@
+h1{
+	color: aqua;
+}
+
+h2{
+	color: rgb(82, 152, 74);
+}
+
+h3{
+	color: rgba(82, 152, 74, .5);
+}
+
+h4{
+	 color: #52984A;/*Los colores hexagesimales no tienen cambio de opacidad*/
+} 

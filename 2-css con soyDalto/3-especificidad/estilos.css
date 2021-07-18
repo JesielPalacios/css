@@ -1,0 +1,80 @@
+/*
+
+Curso de CSS con SoyDaltto en YouTube
+
+/* 
+Especificidad
+
+Orden de la especificidad a la hora de dar estilos en el orden de especificidad que tienen:
+
+• !important
+• estilos en línea.
+• identificadores.
+• El siguiente conjunto se rige en cascada, es decir, de acuerdo al orden de escritura, son: clases, pseudo-clases, atributos.
+• Elementos - pseudo-elementos
+
+Por ejemplo en este caso la cabecera h1 quedaría con el color azul porque el selector de clase tiene un nivel de especificidad mayor.
+
+.color {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+*/
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: orange;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+}
+
+header nav{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+
+header .nav a{
+  text-decoration: none;
+  border: 2px solid #3895EA;
+  border-radius: 50em;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 40px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+}
+
+h1{
+  color: aqua;
+}
+
+p{
+  color: bisque; /* Este queda invalidado por el estilo en línea. */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18;
+}
+
+[cualquierNombre="yellow"] {
+  color: grey;
+}

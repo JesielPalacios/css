@@ -1,0 +1,14 @@
+/*h1, a, div, p{
+	background: #ff8000;
+}*/
+
+div {
+	height: 120px;
+	width: 50%;/*width: 50%;*/
+	background: #ff8000;
+	margin: 20px 50px; 
+	padding: 30px;
+	border: 10px solid #000;/*dotted para una linea punteada.*/
+	/*caja que mide 200 pixeles de alto*/
+	display: inline-block;
+}
