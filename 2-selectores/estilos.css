@@ -1,0 +1,119 @@
+/*
+
+Curso de CSS con SoyDaltto en YouTube
+
+Selectores CSS
+
+selector{ 
+  propiedad: valor;
+}
+
+Donde selector es el elemento (etiqueta ,clase, id, etc) como tal.
+
+En HTML todos los elementos son cajas, ya sean en boque o en línea
+
+Elementos en línea: Son aquellos elementos que se organizan es línea, es decir, uno al lado del otro.
+Elementos en bloque:Son aquellos elementos que se organizan es un renglón cada uno, es decir, un elemento en bloque ocupa una línea completa y el siguiente elemento se posiciona abajo.
+
+
+  • Universal: Esto hace referencia a que todos los elementos en general sean de color rojo.
+
+  *{
+  color: yellow;
+  color: blue;
+  color: red;
+}
+
+A la hora elegir un color generalmente se usan códigos de colores hexadecimales (definición exacta).
+
+*{
+  color: #f00; // Este es el color rojo.
+  color: #ab32de; // "Especie de violeta morado XD."
+}
+
+
+  • De tipo: Estiliza de acuerdo al nombre de la etiqueta del elemento.
+  Para un elemento div que se le pueden dar los siguientes estilos:
+
+  div{
+    padding: 0;
+  }
+
+
+  • Clases: Estiliza de acuerdo al atributo de la clase del elemento.
+  Para un elemento que tiene la clase container se le pueden dar los siguientes estilos:
+
+  .container{
+    padding: 0;
+  }
+
+
+  • ID: Estiliza de acuerdo al atributo de la clase del elemento. No se debe dar el mismo id a más de un elemento porque es el identificador único. Tiene más rango de especificidad que el selector de clase.
+
+
+  • Por atributo: Estiliza de acuerdo al atributo que está directamente en el elemento html.
+
+  Una ves el elemento n tiene el atributo:
+  <h1 cualquierNombre="yellow">Título</h1>
+  
+  En html se puede modificar:
+  [cualquierNombre="yellow"] {
+    color: blue;
+  }
+
+
+  • Descendiente: Cambia los elementos de están dentro de otros elementos, es decir, como por herencia o jerarquía. Esto funciona para clases o para identificadores.
+  Por ejemplo para cambiar alinear horizontalmente todos los enlaces de un elemento nav:
+  nav a {
+    //me queda de tarea investigar xd.
+  }
+
+
+  • Pseudo-clases: Son los estados del elemento en un evento, ya sea a la hora de dar un click, pasar el mouse por encima, etc.Por ejemplo: active y hover.
+
+
+  Existen otras formas con operadores para trabajar con los selectores.
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+}
+
+header nav{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+header .nav a{
+  text-decoration: none;
+  border: 2px solid #3895EA;
+  border-radius: 50em;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 40px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+}
+
+
+
+[cualquierNombre="yellow"] {
+  color: grey;
+}
