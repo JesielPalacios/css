@@ -1,2 +1,2 @@
-# Notas sobre css con curso de soy dalto en YouTube.
-A continuación mis notas sobre css en el curso de soy dalto en YouTube.
+# Notas sobre css cursos de css de Youtube e internet en general.
+A continuación todas mis notas y apuntes sobre css.
