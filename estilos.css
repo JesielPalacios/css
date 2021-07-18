@@ -10,3 +10,18 @@ CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráf
 Es decir, con este se puede dar modelado a los elementos de HTML.
 
 */
+
+*{
+  padding: 0;
+  background-color: orange;
+}
+
+h1{
+  color: aqua;
+}
+
+p{
+  color: bisque;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18;
+}
